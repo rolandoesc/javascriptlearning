@@ -4,25 +4,16 @@
   <meta charset="utf-8">
   <title>JavaScript Example</title>
   <script type="text/javascript">
-    /*var candidates = [];
-    candidates[0] = 'Rolando';
-    candidates[1] = 'Nelly';
-    candidates[2] = 'Angélica';
-    candidates[3] = 'Bruno';
- var candidates = ['Rolando', 'Nelly','Angélica', 'Rafael']; //Another way to create arrays;
+  var playlist = ['Soda Stereo', 'Caramelos de Cianuro', 'Desorden Público', 'Los Pericos'];
 
-    */
+  //Ciclo while
+  var i = 0;
+  while (i < playlist.length)
+  {
+  document.write('<br /> Now Playing: ' + playlist[i]);
+  i++;
+  }
 
-var fechaVuelo = new Date('March 31, 2017');
-var misvars = ['Atlantic', 720, fechaVuelo];
-
-for (i in misvars)
-{
-  document.write('<br />'+ misvars[i]);
-}
-
-
-alert('The selected name is: ' + candidates[2]);
   </script>
 </head>
 <body>
