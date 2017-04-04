@@ -2,8 +2,26 @@
 <html>
 <head>
   <title>JavaScript Example</title>
+  <script type="text/javascript">
+    fuction substitute() {
+      var myValue = document.getElementById('myTextBox').value;
+
+      if (myValue.length == 0) {
+        alert('Please enter a value');
+        return;
+      }
+      var myTitle = document.getElementById('title');
+      myTitle.innerHTML = myValue;
+
+    }
+
+  </script>
 </head>
-<body onload="alert('Hello World!')">
-  <h1>This is an example of a header</h1>
+<body>
+  <h1 id="title">This is an example of a header</h1>
+
+  <input type="text" id="myTextBox" />
+  <input type="submit" value="Click Me!" onclick=""/>
+
 </body>
 </html>
