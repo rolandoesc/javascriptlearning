@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>JavaScript Example</title>
   <script type="text/javascript">
-    function substitute() {
-      var myValue = document.getElementById('myTextBox').value;
+    var candidates = [];
+    candidates[0] = 'Rolando';
+    candidates[1] = 'Nelly';
+    candidates[2] = 'Angélica';
+    candidates[3] = 'Bruno';
 
-      if (myValue.length == 0) {
-        alert('Please enter a value');
-        return;
-      }
-      var myTitle = document.getElementById('title');
-      myTitle.innerHTML = myValue;
-
-    }
-
+alert('The selected name is: ' + candidates[2]);
   </script>
 </head>
 <body>
-  <h1 id="title">This is an example of a header</h1>
 
-  <input type="text" id="myTextBox" />
-  <input type="submit" value="Click Me!" onclick="substitute()" />
 
 </body>
 </html>
