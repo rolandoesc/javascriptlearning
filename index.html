@@ -6,6 +6,7 @@
   <script type="text/javascript">
   var playlist = ['Soda Stereo', 'Caramelos de Cianuro', 'Desorden Público', 'Los Pericos'];
 
+/*
   //Ciclo while
   var i = 0;
   while (i < playlist.length)
@@ -14,6 +15,23 @@
   i++;
   }
 
+//do - while
+
+var someResult = false;
+do {
+  document.write('Imprime algo al menos una vez.');
+} while (someResult);
+*/
+
+// for loop
+
+for (var i = 0; i < playlist.length; i++)
+{
+
+  document.write('<br /> Now Playing: '+ playlist[i]);
+  document.write('<br /> Contador en: ' + i + '<br />');
+
+}
   </script>
 </head>
 <body>
